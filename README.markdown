@@ -29,11 +29,11 @@ Put your .torrent files into the configured dir.
 
 Run the tracker
 
-   ruby config.ru
+    ruby config.ru
 
 or
 
-  bundle exec rackup
+    bundle exec rackup
 
 Notes
 =====
