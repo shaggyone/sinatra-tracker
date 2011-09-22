@@ -4,7 +4,7 @@ require 'rubygems'
 #gem 'ruby-tracker'
 
 require 'sinatra/base'
-require 'bencoded_record/bencoded_record'
+#require 'bencoded_record'
 require 'pp'
 
 
@@ -56,13 +56,12 @@ class SinatraTracker < Sinatra::Base
 
   configure do
     $config = YAML.load(File.read(File.join(File.dirname(__FILE__), 'config', 'config.yml')))[Sinatra::Application.environment.to_s]
-    pp $config
     $tracker = init_torrent_tracker
   end
 
   get '/ns-announce' do
     puts request.query_string
-    
+
     content_type 'text/plain'
     params['ip'] ||= request.ip
     $tracker ||= init_torrent_tracker

@@ -1,6 +1,7 @@
 development:
   torrents_dir: ./torrents
+  port: 3000
 
 production:
   torrents_dir: /home/victor/torrents
-  
+
