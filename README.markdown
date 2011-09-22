@@ -11,9 +11,9 @@ it looks into torrents folder, and starts waiting for seeds and peers.
 Using
 -----
 Clone the repository
-`git clone git://github.com/shaggyone/sinatra-tracker.git
-`cd sinatra-tracker
+    git clone git://github.com/shaggyone/sinatra-tracker.git
+    cd sinatra-tracker
 Set up dir where tracker will search  for torrent files.
-`vim config/config.yml
+    vim config/config.yml
 
 Run the tracker
