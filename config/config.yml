@@ -1,0 +1,6 @@
+development:
+  torrents_dir: ./torrents
+
+production:
+  torrents_dir: /home/victor/torrents
+  
